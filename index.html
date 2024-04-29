@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,16 +26,16 @@
                     <!--NavBar-->
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li> <a href="#inicio" class="seleccionado"> INICIO </a> </li>
-                            <li> <a href="#sobremi"> SOBRE MI </a> </li>
-                            <li> <a href="#habilidades"> HABILIDADES </a> </li>
-                            <li> <a href="#portfolio"> PORTAFOLIO </a> </li>
-                            <li> <a href="#contacto"> CONTACTO </a> </li>
+                            <li> <a href="#inicio" class="seleccionado" onclick="seleccionar(this)"> INICIO </a> </li>
+                            <li> <a href="#sobremi" onclick="seleccionar(this)"> SOBRE MI </a> </li>
+                            <li> <a href="#habilidades" onclick="seleccionar(this)"> HABILIDADES </a> </li>
+                            <li> <a href="#portfolio" onclick="seleccionar(this)"> PORTAFOLIO </a> </li>
+                            <li> <a href="#contacto" onclick="seleccionar(this)"> CONTACTO </a> </li>
                         </ul>
                     </nav>
 
                     <!--Icono menu (responsive)-->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
@@ -55,9 +55,11 @@
 
                 <p class="bienvenida"> Bienvenidos</p>
                 <h2>Soy <span>Dolores Calderón</span>, Developer </h2>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae
-                    nesciunt impedit vitae, veniam excepturi praesentium reiciendis amet? Odit commodi molestias error
-                    eveniet mollitia animi placeat a rem iusto asperiores.</p>
+                <p class="descripcion">Me considero una apasionada de la programación y las matemáticas, actualmente
+                    desempeñándome como ayudante de cátedra de matemática en la Universidad
+                    Tecnológica Nacional (UTN).
+                    Me gradué a principios de 2024 con un promedio de 9.25, lo que refleja mi dedicación y compromiso
+                    con el aprendizaje.</p>
                 <a href="#portfolio"> Ir a Portafolio</a>
             </div>
 
@@ -259,6 +261,9 @@
             <a href="#"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
